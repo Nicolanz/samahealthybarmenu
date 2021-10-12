@@ -1,0 +1,34 @@
+/* home styles- File to define the home styles */
+
+
+
+/* Definition of global variables */
+:root{
+    --pink-light-color: #FEF1EC;
+    --white-usual-color: #eff4f8;
+    --green-light-color: #B7DFDE;
+    --green-dark-color: #5FD39F;
+    --brown-color: #877673;
+    --white-color: white;
+    --main-font: futura-pt_normal;
+    --light-font: futura-pt_light;
+}
+
+/* header styles */
+header{
+    border: 2px solid black
+}
+
+
+/* media quieries header styles - 992px (break-point) */
+@media only screen and (max-width: 992px) {
+    
+}
+/* media quieries header styles - 768px (break-point) */
+@media only screen and (max-width: 767px) {
+    
+}
+/* media quieries header styles - 576px (break-point) */
+@media only screen and (max-width: 576px) {
+    
+}

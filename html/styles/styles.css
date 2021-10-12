@@ -1,0 +1,264 @@
+
+/* general-styles - File to define the global styles */
+
+/* import external fonts */
+
+  
+  /* Definition of global css variables */
+  :root{
+    --font-nav-size: 11.9608px;
+    --brown-color: #877673;
+    --brown-dark-color: #616161;
+    --white-color: white;
+    --green-extralight-color: #F0F2FA;
+    --green-dark-color: #5FD39F;
+    --main-font: futura-pt_normal;
+    --light-font: futura-pt_light;
+  }
+  
+  /* box-size rules */
+  *, body{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* body tag styles */
+  body {
+    z-index: -2;
+    min-height: 100vh;
+    max-height: auto;
+  }
+  header{
+
+  }
+  
+  /* Underlined menu tag */
+  .tag{
+    border-bottom: 1px solid var(--brown-color);
+    padding-bottom: 3px;
+  }
+  
+  /* HEADER STYLES */
+  
+  /* nav styles */
+  nav { 
+    min-height: 150px;
+    z-index: 1;
+    top: 0;
+    background-color: transparent;
+    transition: top 0.3s;
+  }
+  nav ul li a {
+    font-size: var(--font-nav-size);
+    font-family: var(--main-font);
+    color: var(--brown-color);
+    text-decoration: none;
+  }
+  nav ul li a:hover{
+    color: var(--brown-color);
+  }
+  nav div a img{
+    width:93px; 
+    height:93px;
+  }
+  nav .logos-nav svg{
+    font-size: var(--font-nav-size);
+    color: var(--brown-color);
+  }
+  nav .menu .menuContent a svg{
+    color: var(--brown-color);
+  }
+  .button{
+    font-size: var(--font-nav-size);
+    color: var(--white-color);
+    background-color: var(--green-dark-color);
+    padding: 15px 24px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+  }
+  nav .menu .menuContent button{
+    background-color: var(--green-dark-color);
+    color: var(--white-color);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    padding: 15px 24px;
+    font-size: 16px;
+    padding: 15.36px 25.6512px;
+    width: 200px;
+  }
+  nav button:hover{
+    opacity: 0.5;
+  }
+  nav .logos-nav a svg{
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* FOOTER STYLES */
+  
+  footer{
+    margin-top: 700px;
+    min-height: 150px;
+    background-color: var(--green-extralight-color) !important;
+  }
+  footer ul li a{
+    color:var(--brown-color);
+    font-family: var(--main-font);
+    font-size: 12px;
+  }
+  footer ul li a:hover{
+    color: var(--brown-dark-color);
+  }
+  footer span{
+    color:var(--brown-color);
+    font-family: var(--main-font);
+    font-size: 14px;
+  }
+  
+  
+  /* MEDIA QUERIES */
+  
+  /* media quieries nav styles - 992px (break-point) */
+  @media only screen and (max-width: 992px){
+    nav .logos-nav a svg.cart{
+      opacity: 0.5;
+      width: 30px;
+      height:30px;
+    }
+  }
+  /* media quieries nav styles - 576px (break-point) */
+  @media only screen and (max-width: 576px){
+    nav{
+      min-height: 130px;
+    }
+    header nav div a img{
+      width:80px; 
+      height:80px;
+    }
+    /* footer media query styles */
+    footer{
+      min-height: 200px;
+    }
+  }
+  
+  /* Full screen nav styles */
+  .open {
+    background-color: transparent;
+    width: 30px;
+    height: 4px;
+    display: block;
+    border-radius: 2px;
+    cursor: pointer;
+    position: relative;
+    /* top: 8px; */
+  }
+  .open:before {
+    content: "";
+    background-color: var(--brown-color);
+    width: 30px;
+    height: 3px;
+    opacity: 0.5;
+    display: block;
+    border-radius: 2px;
+    position: relative;
+    top: 3px;
+    transform: rotate(0deg);
+    transition: all 0.3s ease;
+  }
+  .open:after {
+    content: "";
+    background-color: var(--brown-color);
+    width: 30px;
+    height: 3px;
+    opacity: 0.5;
+    display: block;
+    border-radius: 2px;
+    position: relative;
+    top: 13px;
+    transform: rotate(0deg);
+    transition: all 0.3s ease;
+  }
+  .menuOpen {
+    width: 24px;
+    height: 20px;
+    display: block;
+    cursor: pointer;
+  }
+  .menu {
+    top: 0;
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    background-color: var(--white-usual-color);
+    z-index:-1;
+  }
+  .menu label {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-size: 100%;
+    cursor: pointer;
+  }
+  .menu .menuContent {
+    height: 60vh;
+    overflow: scroll;
+  }
+  .menu ul {
+    list-style: none;
+  }
+  .menu ul li a {
+    color: var(--brown-color);
+    text-decoration: none;
+    transition: color 0.2s;
+    font-family: var(--light-font);
+    font-weight: 70;
+    font-size: 35px;
+    text-transform: uppercase;
+  }
+  .menu ul li a:hover {
+    color: var(--brown-color);
+  }
+  .menuEffects {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+  }
+  .menuEffects ul {
+    transform: translateY(0%);
+    transition: all 0.5s;
+  }
+  #menuToggle:checked ~ .menuEffects {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s;
+  }
+  #menuToggle:checked ~ .menuEffects ul {
+    opacity: 1;
+  }
+  #menuToggle:checked ~ .menuOpen .open {
+    background-color: transparent;
+  }
+  #menuToggle:checked ~ .menuOpen .open:before {
+    content: "";
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
+  #menuToggle:checked ~ .menuOpen .open:after {
+    content: "";
+    transform: rotate(-45deg);
+    position: relative;
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
+  #menuToggle:not(:checked) ~ .menuEffects ul {
+    transform: translateY(-30%);
+  }
