@@ -1,34 +1,44 @@
-/* home styles- File to define the home styles */
 
 
 
-/* Definition of global variables */
-:root{
-    --pink-light-color: #FEF1EC;
-    --white-usual-color: #eff4f8;
-    --green-light-color: #B7DFDE;
-    --green-dark-color: #5FD39F;
-    --brown-color: #877673;
-    --white-color: white;
-    --main-font: futura-pt_normal;
-    --light-font: futura-pt_light;
+.menu_imgs{
+    width: 100%;
+    height: 270px;
+    transition: 0.5s all ease-in-out;
+}
+@media(hover: hover) and (pointer: fine) {
+    .menu_imgs:hover{
+        transform: scale(1.2);
+    }
 }
 
-/* header styles */
-header{
-    border: 2px solid black
+.alter_button{
+    position: absolute;
+    padding: 7px 20px 7px 20px;
+    background-color: rgba(216, 212, 212, 0.315);
+    color: white;
+    border: 2px solid white;
+    border-radius: 10%;
 }
-
 
 /* media quieries header styles - 992px (break-point) */
 @media only screen and (max-width: 992px) {
-    
+    .menu_imgs{
+        width: 100%;
+        height: 350px;
+    }
 }
 /* media quieries header styles - 768px (break-point) */
 @media only screen and (max-width: 767px) {
-    
+    .menu_imgs{
+        width: 100%;
+        height: 300px;
+    }
 }
 /* media quieries header styles - 576px (break-point) */
 @media only screen and (max-width: 576px) {
-    
+    .menu_imgs{
+        width: 100%;
+        height: 200px;
+    }
 }

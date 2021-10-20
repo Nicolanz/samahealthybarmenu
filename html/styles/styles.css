@@ -26,16 +26,11 @@
   /* body tag styles */
   body {
     z-index: -2;
-    min-height: 100vh;
-    max-height: auto;
+    /* max-height: auto; */
   }
-  header{
-
-  }
-  
   /* Underlined menu tag */
-  .tag{
-    border-bottom: 1px solid var(--brown-color);
+  .underline{
+    border-bottom: 2px solid var(--brown-color);
     padding-bottom: 3px;
   }
   
@@ -43,10 +38,10 @@
   
   /* nav styles */
   nav { 
+    background-color: rgba(255, 255, 255, 0.836);
     min-height: 150px;
     z-index: 1;
     top: 0;
-    background-color: transparent;
     transition: top 0.3s;
   }
   nav ul li a {
@@ -59,8 +54,8 @@
     color: var(--brown-color);
   }
   nav div a img{
-    width:93px; 
-    height:93px;
+    width:120px; 
+    height:120px;
   }
   nav .logos-nav svg{
     font-size: var(--font-nav-size);
@@ -97,10 +92,14 @@
     height: 20px;
   }
   
+  /* header styles */
+  header{
+    margin-top: 180px;
+  }
+
   /* FOOTER STYLES */
   
   footer{
-    margin-top: 700px;
     min-height: 150px;
     background-color: var(--green-extralight-color) !important;
   }
@@ -132,11 +131,11 @@
   /* media quieries nav styles - 576px (break-point) */
   @media only screen and (max-width: 576px){
     nav{
-      min-height: 130px;
+      min-height: 100px;
     }
-    header nav div a img{
-      width:80px; 
-      height:80px;
+    nav div a img{
+      width:120px; 
+      height:120px;
     }
     /* footer media query styles */
     footer{
@@ -146,7 +145,7 @@
   
   /* Full screen nav styles */
   .open {
-    background-color: transparent;
+    /* background-color: transparent; */
     width: 30px;
     height: 4px;
     display: block;
@@ -192,7 +191,7 @@
     bottom: 0;
     position: fixed;
     left: 0;
-    background-color: var(--white-usual-color);
+    background-color: rgba(255, 255, 255, 0.726);
     z-index:-1;
   }
   .menu label {
