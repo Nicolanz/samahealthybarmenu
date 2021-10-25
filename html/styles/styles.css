@@ -1,8 +1,6 @@
 
 /* general-styles - File to define the global styles */
 
-/* import external fonts */
-
   
   /* Definition of global css variables */
   :root{
@@ -15,7 +13,6 @@
     --main-font: futura-pt_normal;
     --light-font: futura-pt_light;
   }
-  
   /* box-size rules */
   *, body{
     border: 0;
@@ -26,11 +23,11 @@
   /* body tag styles */
   body {
     z-index: -2;
-    /* max-height: auto; */
+    background:transparent;
   }
   /* Underlined menu tag */
   .underline{
-    border-bottom: 2px solid var(--brown-color);
+    border-bottom: 2px solid black;
     padding-bottom: 3px;
   }
   
@@ -38,8 +35,8 @@
   
   /* nav styles */
   nav { 
-    background-color: rgba(255, 255, 255, 0.836);
-    min-height: 150px;
+    background-color: #F4F6F5;
+    min-height: 100px;
     z-index: 1;
     top: 0;
     transition: top 0.3s;
@@ -57,10 +54,7 @@
     width:120px; 
     height:120px;
   }
-  nav .logos-nav svg{
-    font-size: var(--font-nav-size);
-    color: var(--brown-color);
-  }
+  
   nav .menu .menuContent a svg{
     color: var(--brown-color);
   }
@@ -79,7 +73,7 @@
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
-    padding: 15px 24px;
+    padding: 12px 15px;
     font-size: 16px;
     padding: 15.36px 25.6512px;
     width: 200px;
@@ -87,21 +81,21 @@
   nav button:hover{
     opacity: 0.5;
   }
-  nav .logos-nav a svg{
-    width: 20px;
-    height: 20px;
+  .logos-nav a img{
+    width: 22px;
+    height: 22px;
   }
   
   /* header styles */
   header{
-    margin-top: 180px;
+    margin-top: 120px;
   }
 
   /* FOOTER STYLES */
   
   footer{
     min-height: 150px;
-    background-color: var(--green-extralight-color) !important;
+    background-color: #ECE4DB;
   }
   footer ul li a{
     color:var(--brown-color);
@@ -122,17 +116,14 @@
   
   /* media quieries nav styles - 992px (break-point) */
   @media only screen and (max-width: 992px){
-    nav .logos-nav a svg.cart{
-      opacity: 0.5;
-      width: 30px;
-      height:30px;
-    }
+
   }
   /* media quieries nav styles - 576px (break-point) */
   @media only screen and (max-width: 576px){
     nav{
       min-height: 100px;
     }
+    
     nav div a img{
       width:120px; 
       height:120px;

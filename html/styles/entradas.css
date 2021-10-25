@@ -1,0 +1,60 @@
+/* Entradas Styles - File to define the entradas styles */
+
+
+/* header styles */
+
+header{
+    margin-top: 170px !important;
+}
+
+.lightbox{
+    height: 100vh;
+    z-index: 99;
+    position: fixed;
+    top:0;
+    left:0;
+    background: rgba(36, 36, 36, 0.863);
+}
+.lightbox > div{
+    height: 100%;
+}
+.lightbox > div .lightContainer{
+    background-color: white;
+    transition: 0.5s all ease-in-out;
+}
+.lightbox > div .lightContainer .hideLightBox{
+    top:4px;
+    right: 3px;
+}
+.lightbox > div .lightContainer .hideLightBox img{
+    width: 25px;
+    height: 25px;
+}
+
+.lightbox img{
+    height: 300px;
+    width: 100%;       
+}
+
+/* article styles */
+article .card .card-body .text-muted, 
+.text-muted{
+    text-decoration: line-through;
+}
+
+article .card{
+    background: transparent;
+}
+
+
+/* media quieries header styles - 992px (break-point) */
+@media only screen and (max-width: 992px) {
+}
+/* media quieries header styles - 768px (break-point) */
+@media only screen and (max-width: 767px) {
+    
+}
+/* media quieries header styles - 576px (break-point) */
+@media only screen and (max-width: 576px) {
+    
+}

@@ -5,11 +5,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <!-- TITLE BAR ICON -->
-      <link rel = "icon" href="./images/logo_sama.png" type="image/x-icon">
-      <!-- GENERAL FILE FOR GLOBAL STYLES -->
-      <link rel="stylesheet" href="./styles/styles.css">
-      <!-- HOME STYLES -->
-      <link rel="stylesheet" href="./styles/index.css">
+      <link rel = "icon" href="./images/icons/logo_sama.png" type="image/x-icon">
       <!-- BOOTSTRAP CDN -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
       <!-- IMPORTING JQUERY -->
@@ -22,170 +18,186 @@
       src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
       integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
       crossorigin="anonymous"></script>
-
+      <!-- HOME STYLES -->
+      <link rel="stylesheet" href="./styles/index.css?v=1.1">
+      <!-- GENERAL FILE FOR GLOBAL STYLES -->
+      <link type="text/css" rel="stylesheet" href="./styles/styles.css">
+      <!-- NAV SCRIPTS -->
+      <!-- <script src="./scripts/nav.js"></script> -->
   </head>
   <body>
     <!-- NAV TAG -->
-    <nav class="d-flex flex-row justify-content-around align-items-center position-fixed col-12" id="navbar">
+    <nav class="d-flex flex-row justify-content-between justify-content-md-around align-items-center position-fixed col-12" id="navbar">
+
         <!-- PARTS TO DEFINE FULL SCREEN MENU -->
         <input type="checkbox" id="menuToggle" class="d-none "></input>
-        <label for="menuToggle" class="menuOpen d-auto d-md-none ml-4">
-        <div class="open"></div>
+        <label for="menuToggle" class="menuOpen d-auto d-md-none ml-4 order-0">
+            <div class="open"></div>
         </label>
         <!-- LOGO DIV -->
-        <div class="mr-2 mr-md-auto ml-auto ml-lg-5 order-1 order-md-0">
-        <a href=""><img class="rounded-circle logoImgSize" src="./images/logo_sama.png" alt=""></a>
+        <div class="order-1 order-md-0 ">
+            <a class="ml-4 mr-md-0" href="./index.html"><img class="rounded-circle logoImgSize" src="./images/icons/logo_sama.png" alt=""></a>
         </div>
         <!-- UNORDERED LIST - PARTS OF THE WEBSITE -->
-        <ul class="list-unstyled m-0 d-none d-md-flex flex-row justify-content-around col-md-6 col-lg-5">
-        <li class=""><a href="">MENU</a></li>
-        <li class=""><a href="">CARTA</a></li>
-        <li class=""><a href="">PIDE EN LINEA</a></li>
-        <li class=""><a href="">LOCAL</a></li>
-        <li class=""><a href="#">NOSOTROS</a></li>
-        <li class=""><a href="">CONTACTANOS</a></li>
-        </ul>
-        <!-- CART AND INSTAGRAM ICONS -->
-        <span class="logos-nav p-0 m-0  d-flex flex-row justify-content-around align-items-center order-0 order-md-1 ">
-        <a href="https://www.instagram.com/samahealthybar/?hl=es-la" class="d-none d-lg-flex align-items-center ml-3 mr-4"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-        </svg></a>
-        </span>
+        <div class="m-0 d-none d-md-flex flex-row flex-wrap col-md-6 col-lg-8 ">
+            <ul class="list-unstyled d-flex flex-row flex-nowrap justify-content-center m-0 col-12">
+                <li class="p-2 p-lg-3"><a href="./entradas.html">ENTRADAS</a></li>
+                <li class="p-2 p-lg-3"><a href="./desayunos.html">DESAYUNOS</a></li>
+                <li class="p-2 p-lg-3"><a href="./smoothies.html">SMOOTHIES</a></li>
+                <li class="p-2 p-lg-3"><a href="./sandwiches.html">SANDWICHES</a></li>
+                <li class="p-2 p-lg-3"><a href="./bowls.html">BOWLS</a></li>
+            </ul>
+            <ul class="list-unstyled d-flex flex-row flex-nowrap justify-content-center m-0 col-12">
+                <li class="p-2 p-lg-3"><a href="./arepas.html">AREPAS</a></li>
+                <li class="p-2 p-lg-3"><a href="./pizzas.html">PIZZAS</a></li>
+                <li class="p-2 p-lg-3"><a href="./postres.html">POSTRES</a></li>
+                <li class="p-2 p-lg-3"><a href="./shots.html">SHOTS</a></li>
+                <li class="p-2 p-lg-3"><a href="./bebidas.html">BEBIDAS</a></li>
+            </ul>
+        </div>
         <!-- MAIN NAV BUTTON -->
-        <div class=" d-none d-md-flex justify-content-center col-md-3 col-lg-2 order-md-2">
-        <button class="button" >MENU</button>
+        <div class="justify-content-center order-2 ">
+            <button class="button d-none d-md-block">PIDE AHORA</button>
+            <span class="logos-nav m-0 d-flex flex-row justify-content-center align-items-center mr-4 mr-md-0 mt-0 mt-md-2">
+                <a href="https://www.instagram.com/samahealthybar/?hl=es-la" class=""><img target="_blank" src="./images/icons/instagram.png" alt=""></a>
+                <a href="https://www.facebook.com/SamaHealthyBar" class="ml-2"><img target="_blank" src="./images/icons/facebook.png" alt=""></a>
+            </span>
         </div>
         <!-- DIV DEFINE FULL SCREEN MENU -->
         <div class="menu menuEffects d-flex align-items-center justify-content-center col-12">
-        <label for="menuToggle"></label>
-        <div class="menuContent mt-5 mt-md-0 d-flex flex-column justify-content-md-around col-12">
-            <ul class="ml-5 p-0">
-            <li><a href="">MENU</a></li>
-            <li><a href="">CARTA</a></li>
-            <li><a href="">PIDE EN LINEA</a></li>
-            <li><a href="">LOCAL</a></li>
-            <li><a href="">NOSOTROS</a></li>
-            <li><a href="">CONTACTANOS</a></li>
-            </ul>
-            <div>
-            <a href="https://www.instagram.com/samahealthybar/?hl=es-la" target="_blank" class="ml-5">
-                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-                </svg>
-            </a>
+            <label for="menuToggle"></label>
+            <div class="menuContent mt-5 mt-md-0 d-flex flex-column justify-content-md-around col-12">
+                <ul class="ml-5 p-0">
+                    <li class=""><a href="./entradas.html">ENTRADAS</a></li>
+                    <li class=""><a href="./desayunos.html">DESAYUNOS</a></li>
+                    <li class=""><a href="./smoothies.html">SMOOTHIES</a></li>
+                    <li class=""><a href="./sandwiches.html">SANDWICHES</a></li>
+                    <li class=""><a href="./bowls.html">BOWLS</a></li>
+                    <li class=""><a href="./arepas.html">AREPAS</a></li>
+                    <li class=""><a href="./pizzas.html">PIZZAS</a></li>
+                    <li class=""><a href="./postres.html">POSTRES</a></li>
+                    <li class=""><a href="./shots.html">SHOTS</a></li>
+                    <li class=""><a href="./bebidas.html">BEBIDAS</a></li>
+                </ul>
+                
+                <button class="mt-5 ml-5">
+                PIDE AHORA
+                </button>
             </div>
-            
-            <button class="mt-5 ml-5">
-            MENU
-            </button>
-        </div>
         </div>
     </nav>
 
+
+
     <!-- HEADER TAG -->
     <header class="col-12">
-      <h2 class="text-center my-5"><span class="underline">NUESTRO MENU</span></h2>
+        <div class="col-12">
+          <video class="col-12" id="vid" playsinline autoplay muted loop>
+              <source src="./videos/sama.mp4">
+          </video>
+        </div>
+      <h2 class="text-center my-5"><span class="underline">Nuestro Menu</span></h2>
     </header>
 
     <!-- ARTICLE TAG -->
-    <article class="article d-flex flex-row flex-wrap justify-content-center align-items-center col-12  mb-5">
-        <div class="col-12 col-lg-6 mb-lg-4 p-2 d-flex justify-content-center">
-            <div class="col-11 col-lg-9 d-flex justify-content-center align-items-center border position-relative overflow-hidden">
+    <article class="article d-flex flex-row flex-wrap justify-content-center align-items-center col-12 mb-5">
+        <div class="col-12 col-lg-4 mb-4 mb-lg-4  d-flex justify-content-center">
+            <div class="col-11 col-lg-9 d-flex justify-content-center align-items-center position-relative overflow-hidden">
                 <a href="./entradas.html" class="col-12 d-flex justify-content-md-center">
-                    <img src="./images/asparagus.jpg" class="menu_imgs" alt="">
+                    <img src="./images/image_sama4.png" class="menu_imgs" alt="">
                 </a>
-                <button class="alter_button">
+                <a class="alter_button text-decoration-none" href="./entradas.html" type="button">
                     Entradas
-                </button>
+                </a>
             </div>
         </div>
-        <div class="col-12 col-lg-6 mb-lg-4 p-2 d-flex justify-content-center">
-            <div class="col-11 col-lg-9 d-flex justify-content-center align-items-center border position-relative overflow-hidden">
+        <div class="col-12 col-lg-4 my-4 mb-lg-4  d-flex justify-content-center">
+            <div class="col-11 col-lg-9 d-flex justify-content-center align-items-center position-relative overflow-hidden">
                 <a href="" class="col-12 d-flex justify-content-md-center">
-                    <img src="./images/freshsalads-min.jpg" class="menu_imgs" alt="">
+                    <img src="./images/image_sama4.png" class="menu_imgs" alt="">
                 </a>
                 <button class="alter_button">
-                    Lasagnas y canelones
+                    Desayunos
                 </button>
             </div>
         </div>
-        <div class="col-12 col-lg-6 mb-lg-4 p-2 d-flex justify-content-center">
-            <div class="col-11 col-lg-9 d-flex justify-content-center align-items-center border position-relative overflow-hidden">
+        <div class="col-12 col-lg-4 my-4 mb-lg-4  d-flex justify-content-center">
+            <div class="col-11 col-lg-9 d-flex justify-content-center align-items-center position-relative overflow-hidden">
                 <a href="" class="col-12 d-flex justify-content-md-center">
-                    <img src="./images/kids_menu-min.jpg" class="menu_imgs" alt="">
+                    <img src="./images/image_sama4.png" class="menu_imgs" alt="">
                 </a>
                 <button class="alter_button">
-                    Pastas
+                    Smoothies
                 </button>
             </div>
         </div>
-        <div class="col-12 col-lg-6 mb-lg-4 p-2 d-flex justify-content-center">
-            <div class="col-11 col-lg-9 d-flex justify-content-center align-items-center border position-relative overflow-hidden">
-                <a href="" class="col-12 d-flex justify-content-md-center">
-                    <img src="./images/smoothies-min.jpg" class="menu_imgs" alt="">
+        <div class="col-12 col-lg-4 my-4 mb-lg-4  d-flex justify-content-center">
+            <div class="col-11 col-lg-9 d-flex justify-content-center align-items-center position-relative overflow-hidden">
+                <a href="./entradas.html" class="col-12 d-flex justify-content-md-center">
+                    <img src="./images/image_sama4.png" class="menu_imgs" alt="">
                 </a>
-                <button class="alter_button">
-                    Combinados
-                </button>
-            </div>
-        </div>
-        <div class="col-12 col-lg-6 mb-lg-4 p-2 d-flex justify-content-center">
-            <div class="col-11 col-lg-9 d-flex justify-content-center align-items-center border position-relative overflow-hidden">
-                <a href="" class="col-12 d-flex justify-content-md-center">
-                    <img src="./images/snacks-min.jpg" class="menu_imgs" alt="">
+                <a class="alter_button text-decoration-none" href="./entradas.html" type="button">
+                    Sandwiches
                 </a>
-                <button class="alter_button">
-                    Armalo
-                </button>
             </div>
         </div>
-        <div class="col-12 col-lg-6 mb-lg-4 p-2 d-flex justify-content-center">
-            <div class="col-11 col-lg-9 d-flex justify-content-center align-items-center border position-relative overflow-hidden">
+        <div class="col-12 col-lg-4 my-4 mb-lg-4  d-flex justify-content-center">
+            <div class="col-11 col-lg-9 d-flex justify-content-center align-items-center position-relative overflow-hidden">
                 <a href="" class="col-12 d-flex justify-content-md-center">
-                    <img src="./images/sweet_treats-min.jpg" class="menu_imgs" alt="">
-                </a>
-                <button class="alter_button">
-                    Ensaladas
-                </button>
-            </div>
-        </div>
-        <div class="col-12 col-lg-6 mb-lg-4 p-2 d-flex justify-content-center">
-            <div class="col-11 col-lg-9 d-flex justify-content-center align-items-center border position-relative overflow-hidden">
-                <a href="" class="col-12 d-flex justify-content-md-center">
-                    <img src="./images/vegetables.jpg" class="menu_imgs" alt="">
+                    <img src="./images/image_sama4.png" class="menu_imgs" alt="">
                 </a>
                 <button class="alter_button">
                     Bowls
                 </button>
             </div>
         </div>
-        <div class="col-12 col-lg-6 mb-lg-4  p-2 d-flex justify-content-center">
+        <div class="col-12 col-lg-4 my-4 mb-lg-4  d-flex justify-content-center">
             <div class="col-11 col-lg-9 d-flex justify-content-center align-items-center position-relative overflow-hidden">
                 <a href="" class="col-12 d-flex justify-content-md-center">
-                    <img src="./images/vegetables2.jpg" class="menu_imgs" alt="">
+                    <img src="./images/image_sama4.png" class="menu_imgs" alt="">
                 </a>
                 <button class="alter_button">
-                    Sandwiches
+                    Arepas
                 </button>
             </div>
         </div>
-        <div class="col-12 col-lg-6 p-2 d-flex justify-content-center">
-            <div class="col-11 col-lg-9 d-flex justify-content-center align-items-center border position-relative overflow-hidden">
-                <a href="" class="col-12 d-flex justify-content-md-center">
-                    <img src="./images/wraps-min.jpg" class="menu_imgs" alt="">
+        <div class="col-12 col-lg-4 my-4 mb-lg-4  d-flex justify-content-center">
+            <div class="col-11 col-lg-9 d-flex justify-content-center align-items-center position-relative overflow-hidden">
+                <a href="./entradas.html" class="col-12 d-flex justify-content-md-center">
+                    <img src="./images/image_sama4.png" class="menu_imgs" alt="">
                 </a>
-                <button class="alter_button">
-                    Entradas
-                </button>
+                <a class="alter_button text-decoration-none" href="./entradas.html" type="button">
+                    Pizzas
+                </a>
             </div>
         </div>
-        <div class="col-12 col-lg-6 p-2 d-flex justify-content-center">
-            <div class="col-11 col-lg-9 d-flex justify-content-center align-items-center border position-relative overflow-hidden">
+        <div class="col-12 col-lg-4 my-4 mb-lg-4  d-flex justify-content-center">
+            <div class="col-11 col-lg-9 d-flex justify-content-center align-items-center position-relative overflow-hidden">
                 <a href="" class="col-12 d-flex justify-content-md-center">
-                    <img src="./images/asparagus.jpg" class="menu_imgs" alt="">
+                    <img src="./images/image_sama4.png" class="menu_imgs" alt="">
                 </a>
                 <button class="alter_button">
                     Postres
+                </button>
+            </div>
+        </div>
+        <div class="col-12 col-lg-4 my-4 mb-lg-4  d-flex justify-content-center">
+            <div class="col-11 col-lg-9 d-flex justify-content-center align-items-center position-relative overflow-hidden">
+                <a href="" class="col-12 d-flex justify-content-md-center">
+                    <img src="./images/image_sama4.png" class="menu_imgs" alt="">
+                </a>
+                <button class="alter_button">
+                    Shots
+                </button>
+            </div>
+        </div>
+        <div class="col-12 col-lg-4 d-flex justify-content-center">
+            <div class="col-11 col-lg-9 d-flex justify-content-center align-items-center position-relative overflow-hidden">
+                <a href="" class="col-12 d-flex justify-content-md-center">
+                    <img src="./images/image_sama4.png" class="menu_imgs" alt="">
+                </a>
+                <button class="alter_button">
+                    Bebidas
                 </button>
             </div>
         </div>
