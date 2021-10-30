@@ -11,7 +11,7 @@
       <!-- IMPORTING JQUERY -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <!-- TITLE -->
-      <title>Sama | Entradas</title>
+      <title>Sama | Arepas</title>
       <!-- IMPORT BOOTSTRAP - SCRIPT -->
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js" integrity="sha384-5h4UG+6GOuV9qXh6HqOLwZMY4mnLPraeTrjT5v07o347pj6IkfuoASuGBhfDsp3d" crossorigin="anonymous"></script>
       <script
@@ -24,9 +24,13 @@
       <link rel="stylesheet" href="./styles/styles.css">
       <!-- ENTRADAS STYLES -->
       <link rel="stylesheet" href="./styles/items.css?v=1.1">
+      <!-- BOWLS STYTLES -->
+      <link rel="stylesheet" href="./styles/bowls.css?v=1.1">
+      <!-- TABLES STYLES -->
+      <!-- <link rel="stylesheet" href="./styles/tables.css?v=1.1"> -->
 
   </head>
-  <body>
+  <body>  
     <!-- NAV TAG -->
     <nav class="d-flex flex-row justify-content-between justify-content-md-around align-items-center position-fixed col-12 shadow-sm" id="navbar">
       <!-- PARTS TO DEFINE FULL SCREEN MENU -->
@@ -88,158 +92,141 @@
     </nav>
 
     <!-- HEADER TAG -->
-    <header class="col-12">
-      <h2 class="text-center mb-4"><span class="underline">Entradas</span></h2>
+    <header class="col-12 pb-3">
       <div class="location pt-4">
         <span class="ml-4 ml-md-5">
           <span class="">Inicio</span>
           <span class="mx-1">></span>
-          <span class="">Entradas</span>
+          <span class="">Arepas</span>
         </span>
       </div>
+      <h2 class="pt-5 pb-2 display-4 text-center" ><span class="underline">Arepas</span></h2>
+      <h2 class="text-center"><span>Arepas | Tostones</span></h2>
+      <p class="col-12 d-flex text-center justify-content-center">
+        <span class="col-9 col-sm-8 col-md-7 col-lg-8 text-secondary">
+            Elige tus ingredientes y sabores
+        </span>
+      </p>
     </header>
 
     <!-- ARTICLE TAG -->
-    <article class=".article d-flex flex-row flex-wrap justify-content-around col-12">
-      <div class="card col-11 col-md-5 col-lg-3 my-4 my-md-0 p-2 p-md-4 p-lg-5 border-0">
-        <img class="img-fluid" src="./images/food/food18.jpg" alt="Card image cap">
-        <div class="card-body m-0 p-0">
-          <h5 class="card-title text-success my-3">HOLY GUACAMOLE</h5>
-          <p class="card-text text-justify">Aguacate macerado servido con trocitos de tomate,
-            cebolla, mango y chispas de cilantro.</p>
+    <article class="col-12 d-flex flex-row flex-wrap justify-content-lg-around justify-content-center pt-5">
+      <div class="content col-12 col-lg-5 pb-lg-5 mb-lg-5">
+        <div class="container d-flex justify-content-center flex-row flex-wrap">
+          <h2 class="text-center col-9 p-3 text-success">Base</span></h2>
+          <div class="col-12 d-flex justify-content-center">
+            <img class="bowl_imgs" src="./images/food/food56.jpg" alt="">
+          </div>
+          <div class="col-10 col-sm-10 col-md-8 col-lg-10 py-4">
+            <table class="table custom-table">
+              <thead>
+                <tr>
+                  <th scope="col"><span class="text-success">Nombre</span></th>
+                  <th scope="col"><span class="text-secondary">Precio</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr scope="row">
+                    <td>Queso mozzarella</td>
+                    <td class="text-secondary font-italic font-weight-light">+$2.500</td>
+                </tr>
+                <tr>
+                    <td>Queso doble crema</td>
+                    <td class="text-secondary font-italic font-weight-light">+$2.000</td>
+                </tr>
+                <tr>
+                    <td>Queso campesino</td>
+                    <td class="text-secondary font-italic font-weight-light">+$1.500</td>
+                </tr>
+                <tr>
+                    <td>Hogao</td>
+                    <td class="text-secondary font-italic font-weight-light">+$2.500</td>
+                </tr>
+               
+              </tbody>
+            </table>
+          </div>
         </div>
-        <div class="mt-2">
-          <table class="table table-hover">
-            <thead>
-              <tr>
-                <th scope="col">Adicion</th>
-                <th scope="col">Precio</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Plátano</td>
-                <td>$2000</td>
-              </tr>
-              <tr>
-                <td>Chicharron</td>
-                <td>$4.900</td>
-              </tr>
-              
-            </tbody>
-          </table>
-        </div>
-        <div class="card-body m-0 p-0 mb-2 prices">
-          <span class="text-danger">$12.900</span>
-        </div>
-        <span class="m-0 p-0"><a class="m-0 p-0 showLightBox text-decoration-none text-primary">Ver mas</a></span>
       </div>
-
-      <div class="card col-11 col-md-5 col-lg-3 my-3 my-md-0 p-2 p-md-4 p-lg-5 border-0">
-        <img class="img-fluid" src="./images/food/food23.jpg" alt="Card image cap">
-        <div class="card-body m-0 p-0">
-          <h5 class="card-title text-success my-3">NACHOS POT</h5>
-          <p class="card-text text-justify">Base de crujientes totopos que se fusionan con carne de
-            res molida y sazonada en hierbas o pollo con destellos de
-            sabor a parrilla, con pico de gallo casero, macerado de
-            aguacate y queso cheddar.</p>
+      <div class="content col-12 col-lg-5 pb-lg-5 mb-lg-5">
+        <div class="container d-flex justify-content-center flex-row flex-wrap">
+          <h2 class="text-center col-9 p-3 text-success">Extras</span></h2>
+          <div class="col-12 d-flex justify-content-center">
+            <img class="bowl_imgs" src="./images/food/food56.jpg" alt="">
+          </div>
+          <div class="col-10 col-sm-10 col-md-8 col-lg-10 py-4">
+            <table class="table custom-table">
+              <thead>
+                <tr>
+                  <th scope="col"><span class="text-success">Nombre</span></th>
+                  <th scope="col"><span class="text-secondary">Precio</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr scope="row">
+                    <td>Plátano maduro</td>
+                    <td class="text-secondary font-italic font-weight-light">+$2.000</td>
+                </tr>
+                <tr>
+                    <td>Tocineta</td>
+                    <td class="text-secondary font-italic font-weight-light">+$2.500</td>
+                </tr>
+                <tr>
+                    <td>Guacamole</td>
+                    <td class="text-secondary font-italic font-weight-light">+$2.000</td>
+                </tr>
+                <tr>
+                    <td>Maíz tierno</td>
+                    <td class="text-secondary font-italic font-weight-light">+$1.500</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
-        <div class="mt-2">
-          <table class="table table-hover">
-            <thead>
-              <tr>
-                <th scope="col">Adicion</th>
-                <th scope="col">Precio</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Plátano</td>
-                <td>$2000</td>
-              </tr>
-              <tr>
-                <td>Chicharron</td>
-                <td>$4.900</td>
-              </tr>
-              
-            </tbody>
-          </table>
-        </div>
-        <div class="card-body m-0 p-0 mb-2 prices">
-          <span class="text-danger">$24.900</span>
-        </div>
-        <span><a class="showLightBox text-decoration-none text-primary">Ver mas</a></span>
       </div>
-
-      <div class="card col-11 col-md-5 col-lg-3 my-3 my-md-0 p-2 p-md-4 p-lg-5 border-0">
-        <img class="img-fluid" src="./images/food/food40.jpg" alt="Card image cap">
-        <div class="card-body m-0 p-0">
-          <h5 class="card-title text-success my-3">PATACONES </h5>
-          <p class="card-text text-justify">Fiesta de tres patacones, acompañados con tomate,
-            cebolla, aguacate en trozos, un toque de mayonesa
-            light y cilantro.</p>
+      <div class="content col-12 col-lg-5 pb-lg-5 mb-lg-5">
+        <div class="container d-flex justify-content-center flex-row flex-wrap">
+          <h2 class="text-center col-9 p-3 text-success">Extras</span></h2>
+          <div class="col-12 d-flex justify-content-center">
+            <img class="bowl_imgs" src="./images/food/food56.jpg" alt="">
+          </div>
+          <div class="col-10 col-sm-10 col-md-8 col-lg-10 py-4">
+            <table class="table custom-table">
+              <thead>
+                <tr>
+                  <th scope="col"><span class="text-success">Nombre</span></th>
+                  <th scope="col"><span class="text-secondary">Precio</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr scope="row">
+                    <td>Huevo poché</td>
+                    <td class="text-secondary font-italic font-weight-light">+$2.900</td>
+                </tr>
+                <tr>
+                    <td>Jamón de pavo</td>
+                    <td class="text-secondary font-italic font-weight-light">+$3.500</td>
+                </tr>
+                <tr>
+                    <td>Pollo desmechado</td>
+                    <td class="text-secondary font-italic font-weight-light">+$5.500</td>
+                </tr>
+                <tr>
+                    <td>Carne desmechada</td>
+                    <td class="text-secondary font-italic font-weight-light">+$6.000</td>
+                </tr>
+                <tr>
+                    <td>Carne a la parrilla</td>
+                    <td class="text-secondary font-italic font-weight-light">+$7.500</td>
+                </tr>
+                <tr>
+                    <td>Pollo a la parrilla</td>
+                    <td class="text-secondary font-italic font-weight-light">+$5.000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
-        <div class="mt-2">
-          <table class="table table-hover">
-            <thead>
-              <tr>
-                <th scope="col">Adicion</th>
-                <th scope="col">Precio</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Plátano</td>
-                <td>$2000</td>
-              </tr>
-              <tr>
-                <td>Chicharron</td>
-                <td>$4.900</td>
-              </tr>
-              
-            </tbody>
-          </table>
-        </div>
-        <div class="card-body m-0 p-0 mb-2 prices">
-          <span class="text-danger">$8.900</span>
-        </div>
-        <span><a class="showLightBox text-decoration-none text-primary">Ver mas</a></span>
-      </div>
-
-      <div class="card col-11 col-md-5 col-lg-3 my-3 my-md-0 p-2 p-md-4 p-lg-5 border-0">
-        <img class="img-fluid" src="./images/food/food21.jpg" alt="Card image cap">
-        <div class="card-body m-0 p-0">
-          <h5 class="card-title text-success my-3">HUMMUS DE REMOLACHA </h5>
-          <p class="card-text text-justify">Delicioso hummus a base de garbanzos y remolacha,
-            servidos con pan pita o nuestros totopos de la casa,
-            decorados con germinados frescos, ajonjolí negro y
-            garbanzos crocantes.</p>
-        </div>
-        <div class="mt-2">
-          <table class="table table-hover">
-            <thead>
-              <tr>
-                <th scope="col">Adicion</th>
-                <th scope="col">Precio</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Plátano</td>
-                <td>$2000</td>
-              </tr>
-              <tr>
-                <td>Chicharron</td>
-                <td>$4.900</td>
-              </tr>
-              
-            </tbody>
-          </table>
-        </div>
-        <div class="card-body m-0 p-0 mb-2 prices">
-          <span class="text-danger">$12.900</span>
-        </div>
-        <span><a class="showLightBox text-decoration-none text-primary">Ver mas</a></span>
       </div>
     </article>
 

@@ -3,10 +3,10 @@
 
 .menu_imgs{
     width: 100%;
-    height: 200px;
+    height: 500px;
 }
 @media(hover: hover) and (pointer: fine) {
-    .menu_imgs:hover{
+    .menu_imgs:hover, .menu_imgs:active, .menu_imgs:focus{
         transform: scale(1.4);
     }
 }
@@ -30,20 +30,28 @@
 @media only screen and (max-width: 992px) {
     .menu_imgs{
         width: 100%;
-        height: 200px;
+        height: 450px;
+    }
+    header{
+        background-color: #f7f4f3 !important;
+    }
+    article{
+        background-color: #fcd5ce !important;
+        background-image: linear-gradient(#fcd5ce, #a7e8bd, #fcd2af, #cddafd, #f1ffc4) !important;
     }
 }
 /* media quieries header styles - 768px (break-point) */
 @media only screen and (max-width: 767px) {
     .menu_imgs{
         width: 100%;
-        height: 300px;
+        height: 400px;
     }
 }
 /* media quieries header styles - 576px (break-point) */
 @media only screen and (max-width: 576px) {
+    
     .menu_imgs{
         width: 100%;
-        height: 200px;
+        height: 350px;
     }
 }

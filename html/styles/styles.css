@@ -94,8 +94,8 @@
   /* FOOTER STYLES */
   
   footer{
-    min-height: 150px;
-    background-color: #ECE4DB;
+    min-height: 200px;
+    background: #F4F6F5;
   }
   footer ul li a{
     color:var(--brown-color);

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- TITLE BAR ICON -->
+      <link rel = "icon" href="./images/icons/logo_sama.png" type="image/x-icon">
+      <!-- BOOTSTRAP CDN -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+      <!-- IMPORTING JQUERY -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <!-- TITLE -->
+      <title>Sama | Bowls</title>
+      <!-- IMPORT BOOTSTRAP - SCRIPT -->
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js" integrity="sha384-5h4UG+6GOuV9qXh6HqOLwZMY4mnLPraeTrjT5v07o347pj6IkfuoASuGBhfDsp3d" crossorigin="anonymous"></script>
+      <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"></script>
+      <!-- <script src="./scripts/nav.js"></script> -->
+      <script src="./scripts/lightbox.js"></script>
+      <!-- GENERAL FILE FOR GLOBAL STYLES -->
+      <link rel="stylesheet" href="./styles/styles.css">
+      <!-- ENTRADAS STYLES -->
+      <link rel="stylesheet" href="./styles/items.css?v=1.1">
+      <!-- BOWLS STYTLES -->
+      <link rel="stylesheet" href="./styles/bowls.css?v=1.1">
+      <!-- TABLES STYLES -->
+      <!-- <link rel="stylesheet" href="./styles/tables.css?v=1.1"> -->
+
+  </head>
+  <body>  
+    <!-- NAV TAG -->
+    <nav class="d-flex flex-row justify-content-between justify-content-md-around align-items-center position-fixed col-12 shadow-sm" id="navbar">
+      <!-- PARTS TO DEFINE FULL SCREEN MENU -->
+      <input type="checkbox" id="menuToggle" class="d-none "></input>
+      <label for="menuToggle" class="menuOpen d-auto d-md-none ml-4 order-0">
+          <div class="open"></div>
+      </label>
+      <!-- LOGO DIV -->
+      <div class="order-1 order-md-0 ">
+          <a class="ml-4 mr-md-0" href="./index.html"><img class="rounded-circle logoImgSize" src="./images/icons/logo_sama.png" alt=""></a>
+      </div>
+      <!-- UNORDERED LIST - PARTS OF THE WEBSITE -->
+      <div class="m-0 d-none d-md-flex flex-row flex-wrap col-md-6 col-lg-8 ">
+          <ul class="list-unstyled d-flex flex-row flex-nowrap justify-content-center m-0 col-12">
+              <li class="p-2 p-lg-3"><a href="./entradas.html">ENTRADAS</a></li>
+              <li class="p-2 p-lg-3"><a href="./desayunos.html">DESAYUNOS</a></li>
+              <li class="p-2 p-lg-3"><a href="./smoothies.html">SMOOTHIES</a></li>
+              <li class="p-2 p-lg-3"><a href="./sandwiches.html">SANDWICHES</a></li>
+              <li class="p-2 p-lg-3"><a href="./bowls.html">BOWLS</a></li>
+          </ul>
+          <ul class="list-unstyled d-flex flex-row flex-nowrap justify-content-center m-0 col-12">
+              <li class="p-2 p-lg-3"><a href="./arepas.html">AREPAS</a></li>
+              <li class="p-2 p-lg-3"><a href="./pizzas.html">PIZZAS</a></li>
+              <li class="p-2 p-lg-3"><a href="./postres.html">POSTRES</a></li>
+              <li class="p-2 p-lg-3"><a href="./shots.html">SHOTS</a></li>
+              <li class="p-2 p-lg-3"><a href="./bebidas.html">BEBIDAS</a></li>
+          </ul>
+      </div>
+      <!-- MAIN NAV BUTTON -->
+      <div class="justify-content-center order-2 ">
+          <button class="button d-none d-md-block">PIDE AHORA</button>
+          <span class="logos-nav m-0 d-flex flex-row justify-content-center align-items-center mr-4 mr-md-0 mt-0 mt-md-2">
+              <a href="https://www.instagram.com/samahealthybar/?hl=es-la" class=""><img target="_blank" src="./images/icons/instagram.png" alt=""></a>
+              <a href="https://www.facebook.com/SamaHealthyBar" class="ml-2"><img target="_blank" src="./images/icons/facebook.png" alt=""></a>
+          </span>
+      </div>
+      <!-- DIV DEFINE FULL SCREEN MENU -->
+      <div class="menu menuEffects d-flex align-items-center justify-content-center col-12">
+          <label for="menuToggle"></label>
+          <div class="menuContent mt-5 mt-md-0 d-flex flex-column justify-content-md-around col-12">
+              <ul class="ml-5 p-0">
+                  <li class=""><a href="./entradas.html">ENTRADAS</a></li>
+                  <li class=""><a href="./desayunos.html">DESAYUNOS</a></li>
+                  <li class=""><a href="./smoothies.html">SMOOTHIES</a></li>
+                  <li class=""><a href="./sandwiches.html">SANDWICHES</a></li>
+                  <li class=""><a href="./bowls.html">BOWLS</a></li>
+                  <li class=""><a href="./arepas.html">AREPAS</a></li>
+                  <li class=""><a href="./pizzas.html">PIZZAS</a></li>
+                  <li class=""><a href="./postres.html">POSTRES</a></li>
+                  <li class=""><a href="./shots.html">SHOTS</a></li>
+                  <li class=""><a href="./bebidas.html">BEBIDAS</a></li>
+              </ul>
+              
+              <button class="mt-5 ml-5">
+              PIDE AHORA
+              </button>
+          </div>
+      </div>
+    </nav>
+
+    <!-- HEADER TAG -->
+    <header class="col-12 pb-3">
+      <div class="location pt-4">
+        <span class="ml-4 ml-md-5">
+          <span class="">Inicio</span>
+          <span class="mx-1">></span>
+          <span class="">Bowls</span>
+        </span>
+      </div>
+      <h2 class="pt-5 pb-2 display-4 text-center" ><span class="underline">Bowls</span></h2>
+      <p class="col-12 d-flex text-center justify-content-center">
+        <span class="col-9 col-sm-8 col-md-7 col-lg-8 text-secondary">
+          Elige una base, cuatro vegetales, un topping
+          y dos salsas <br>
+          <span class="font-italic font-weight-light">desde $15.900</span>
+        </span>
+      </p>
+    </header>
+
+    <!-- ARTICLE TAG -->
+    <article class="col-12 d-flex flex-row flex-wrap justify-content-lg-around justify-content-center pt-5">
+      <div class="content col-12 col-lg-5 pb-lg-5 mb-lg-5">
+          <div class="container d-flex justify-content-center flex-row flex-wrap">
+            <h2 class="text-center col-9 p-3 text-success">Base <span class="text-dark" >|</span> <span class="text-secondary">1 opcion</span></span></h2>
+            <div class="col-12 d-flex justify-content-center">
+              <img class="bowl_imgs" src="./images/food/food34.jpg" alt="">
+            </div>
+            <div class="col-10 col-sm-10 col-md-8 col-lg-10 py-4">
+              <table class="table custom-table">
+                <thead>
+                  <tr>
+                    <th scope="col"><span class="text-success">Numero</span></th>
+                    <th scope="col"><span class="text-secondary">Nombre</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr scope="row">
+                      <td class="text-danger">1</td>
+                      <td>Arroz blanco</td>
+                  </tr>
+                  <tr>
+                      <td class="text-danger">2</td>
+                      <td>Arroz Integral</td>
+                  </tr>
+                  <tr>
+                      <td class="text-danger">3</td>
+                      <td>Mix de quinoa</td>
+                  </tr>
+                  <tr>
+                      <td class="text-danger">4</td>
+                      <td>Arroz de coco <span class="font-italic font-weight-light">(disponible los viernes)</span></td>
+                  </tr>
+                  <tr>
+                    <td class="text-danger">5</td>
+                      <td>Mix de lechugas</td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+      </div>
+      <div class="content col-12 col-lg-5 pb-lg-5 mb-lg-5">
+        <div class="container d-flex justify-content-center flex-row flex-wrap">
+          <h2 class="text-center col-9 p-3 text-success">Topping <span class="text-dark" >|</span> <span class="text-secondary">1 opcion</span></span></h2>
+          <div class="col-12 d-flex justify-content-center">
+            <img class="bowl_imgs" src="./images/food/food58.jpg" alt="">
+          </div>
+          <div class="col-10 col-sm-10 col-md-8 col-lg-10 py-4">
+            <table class="table custom-table">
+              <thead>
+                <tr>
+                  <th scope="col"><span class="text-success">Numero</span></th>
+                  <th scope="col"><span class="text-secondary">Nombre</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr scope="row">
+                    <td class="text-danger">1</td>
+                    <td>Cilantro</td>
+                </tr>
+                <tr>
+                    <td class="text-danger">2</td>
+                    <td>Coco rallado</td>
+                </tr>
+                <tr>
+                    <td class="text-danger">3</td>
+                    <td>Ajonjolí negro</td>
+                </tr>
+                <tr>
+                    <td class="text-danger">4</td>
+                    <td>Germinados frescos</td>
+                </tr>
+                <tr>
+                  <td class="text-danger">5</td>
+                    <td>Garbanzo crocante</td>
+                </tr>
+                <tr>
+                  <td class="text-danger">6</td>
+                    <td>Trozos de piña asada</td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="content col-12 col-lg-5 pb-lg-5 mb-lg-5">
+        <div class="container d-flex justify-content-center flex-row flex-wrap">
+          <h2 class="text-center col-9 p-3 text-success">Vegetales <span class="text-dark" >|</span> <span class="text-secondary">4 opciones</span></span></h2>
+          <div class="col-12 d-flex justify-content-center">
+            <img class="bowl_imgs" src="./images/food/food48.jpg" alt="">
+          </div>
+          <div class="col-10 col-sm-10 col-md-8 col-lg-10 py-4">
+            <table class="table custom-table">
+              <thead>
+                <tr>
+                  <th scope="col"><span class="text-success">Numero</span></th>
+                  <th scope="col"><span class="text-secondary">Nombre</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr scope="row">
+                    <td class="text-danger">1</td>
+                    <td>Pepino</td>
+                </tr>
+                <tr>
+                    <td class="text-danger">2</td>
+                    <td>Mix de lechugas</td>
+                </tr>
+                <tr>
+                    <td class="text-danger">3</td>
+                    <td>Tomate cherry</td>
+                </tr>
+                <tr>
+                    <td class="text-danger">4</td>
+                    <td>Repollo morado</td>
+                </tr>
+                <tr>
+                    <td class="text-danger">5</td>
+                    <td>Zanahoria</td>
+                </tr>
+                <tr>
+                    <td class="text-danger">6</td>
+                    <td>Mango</td>
+                </tr>
+                <tr>
+                    <td class="text-danger">7</td>
+                    <td>Raíces chinas</td>
+                </tr>
+                <tr>
+                  <td class="text-danger">8</td>
+                  <td>Aguacate</td>
+                </tr>
+                <tr>
+                    <td class="text-danger">9</td>
+                    <td>Zucchini</td>
+                </tr>
+                <tr>
+                    <td class="text-danger">10</td>
+                    <td>Maíz tierno</td>
+                </tr>
+                <tr>
+                    <td class="text-danger">11</td>
+                    <td> Cebolla</td>
+                </tr>
+                <tr>
+                    <td class="text-danger">12</td>
+                    <td>Fríjol</td>
+                </tr>
+                <tr>
+                  <td colspan="2" class="text-center p-3"><span class="font-weight-bold" >Extras:<br>
+                      <span class="font-italic font-weight-light">$1.600</span>
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="content col-12 col-lg-5 pb-lg-5 mb-lg-5">
+        <div class="container d-flex justify-content-center flex-row flex-wrap">
+          <h2 class="text-center col-9 p-3 text-success">Salsas <span class="text-dark" >|</span> <span class="text-secondary">2 opciones</span></span></h2>
+          <div class="col-12 d-flex justify-content-center">
+            <img class="bowl_imgs" src="./images/food/food28.jpg" alt="">
+          </div>
+          <div class="col-10 col-sm-10 col-md-8 col-lg-10 py-4">
+            <table class="table custom-table">
+              <thead>
+                <tr>
+                  <th scope="col"><span class="text-success">Numero</span></th>
+                  <th scope="col"><span class="text-secondary">Nombre</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr scope="row">
+                    <td class="text-danger">1</td>
+                    <td>Hummus</td>
+                </tr>
+                <tr>
+                    <td class="text-danger">2</td>
+                    <td>Hogao</td>
+                </tr>
+                <tr>
+                    <td class="text-danger">3</td>
+                    <td>Pico de gallo</td>
+                </tr>
+                <tr>
+                    <td class="text-danger">4</td>
+                    <td>Miel mostaza</td>
+                </tr>
+                <tr>
+                    <td class="text-danger">5</td>
+                    <td>Cilantro y almendras</td>
+                </tr>
+                <tr>
+                    <td class="text-danger">6</td>
+                    <td>Cremoso de aguacate</td>
+                </tr>
+                <tr>
+                    <td class="text-danger">7</td>
+                    <td>Chipotle</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="content col-12 col-lg-5 pb-lg-5 mb-lg-5">
+        <div class="container d-flex justify-content-center flex-row flex-wrap">
+          <h2 class="text-center col-9 p-3 text-success">Proteína</span></h2>
+          <div class="col-12 d-flex justify-content-center">
+            <img class="bowl_imgs" src="./images/food/food21.jpg" alt="">
+          </div>
+          <div class="col-10 col-sm-10 col-md-8 col-lg-10 py-4">
+            <table class="table custom-table">
+              <thead>
+                <tr>
+                  <th scope="col"><span class="text-success">Nombre</span></th>
+                  <th scope="col"><span class="text-secondary">Precio</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr scope="row">
+                    <td>Carne desmechada</td>
+                    <td class="text-secondary font-italic font-weight-light">+$6.000</td>
+                </tr>
+                <tr>
+                    <td>Carne a la parill<span class="font-italic font-weight-light">(lomo de res)</span></td>
+                    <td class="text-secondary font-italic font-weight-light">+$7.500</td>
+                </tr>
+                <tr>
+                    <td>Pollo a la parrilla</td>
+                    <td class="text-secondary font-italic font-weight-light">+$5.000</td>
+                </tr>
+                <tr>
+                    <td>Pollo desmechado</td>
+                    <td class="text-secondary font-italic font-weight-light">+$5.500</td>
+                </tr>
+                <tr>
+                    <td>Salmón</td>
+                    <td class="text-secondary font-italic font-weight-light">+$10.900</td>
+                </tr>
+                <tr>
+                    <td>Camarón</td>
+                    <td class="text-secondary font-italic font-weight-light">+$9.900</td>
+                </tr>
+                <tr>
+                    <td>Hamburguesa a base de lentejas</td>
+                    <td class="text-secondary font-italic font-weight-light">+$4.500</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="content col-12 col-lg-5 pb-lg-5 mb-lg-5">
+        <div class="container d-flex justify-content-center flex-row flex-wrap">
+          <h2 class="text-center col-9 p-3 text-success">Extras</span></h2>
+          <div class="col-12 d-flex justify-content-center">
+            <img class="bowl_imgs" src="./images/food/food59.jpg" alt="">
+          </div>
+          <div class="col-10 col-sm-10 col-md-8 col-lg-10 py-4">
+            <table class="table custom-table">
+              <thead>
+                <tr>
+                  <th scope="col"><span class="text-success">Nombre</span></th>
+                  <th scope="col"><span class="text-secondary">Precio</span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr scope="row">
+                    <td>Guacamole</td>
+                    <td class="text-secondary font-italic font-weight-light">+$2.000</td>
+                </tr>
+                <tr>
+                    <td>Patacones</td>
+                    <td class="text-secondary font-italic font-weight-light">+$3.000</td>
+                </tr>
+                <tr>
+                    <td>Queso feta</td>
+                    <td class="text-secondary font-italic font-weight-light">+$2.500</td>
+                </tr>
+                <tr>
+                    <td>Plátano maduro</td>
+                    <td class="text-secondary font-italic font-weight-light">+$2.000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <div class="lightbox col-12">
+    </div>
+
+    <!-- FOOTER TAG -->
+    <footer class="col-12 d-flex flex-column flex-wrap align-items-center justify-content-center ">
+      <ul class="m-0 p-0 list-unstyled d-flex flex-row col-9 col-md-7 justify-content-center flex-wrap">
+        <li class="p-2"><a href="">MENU</a></li>
+        <li class="p-2"><a href="carta.html">CARTA</a></li>
+        <li class="p-2"><a href="">PIDE EN LINEA</a></li>
+        <li class="p-2"><a href="">LOCAL</a></li>
+        <li class="p-2"><a href="#">NOSOTROS</a></li>
+        <li class="p-2"><a href="">CONTACTANOS</a></li>
+      </ul>
+      <span class="m-0 p-0">SAMA</span>
+    </footer>
+  </body>
+</html>

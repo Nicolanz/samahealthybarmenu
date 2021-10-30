@@ -1,0 +1,31 @@
+
+/* Bowl styles - File to define the index styles */
+
+.bowl_imgs{
+    width: 80%;
+    height: 350px;
+    border-radius: 5px;
+}
+
+/* media quieries header styles - 992px (break-point) */
+@media only screen and (max-width: 992px) {
+    .bowl_imgs{
+        width: 60%;
+        height: 350px;
+    }
+}
+/* media quieries header styles - 768px (break-point) */
+@media only screen and (max-width: 767px) {
+    .bowl_imgs{
+        width: 80%;
+        height: 400px;
+    }
+}
+/* media quieries header styles - 576px (break-point) */
+@media only screen and (max-width: 576px) {
+    
+    .bowl_imgs{
+        width: 80%;
+        height: 300px;
+    }
+}

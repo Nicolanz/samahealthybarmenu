@@ -11,11 +11,11 @@ function buildLightBox(div){
       <div class="d-flex align-items-center justify-content-center">
         <div class="lightContainer d-flex flex-row justify-content-around flex-wrap col-11 col-lg-10 p-2 p-lg-0 border position-relative">  
             <div class="col-12 col-lg-5 position-relative">
-              <a class="hideLightBox position-absolute d-block d-lg-none"><img src="./images/close.ico" alt=""></a>
+              <a class="hideLightBox position-absolute d-block d-lg-none"><img src="./images/icons/close.ico" alt=""></a>
               <img src="${img}" alt="" class="img-fluid">
             </div>
             <div class="col-12 col-lg-5 d-flex flex-column flex-wrap justify-content-center p-2 p-lg-1">
-              <span class="d-none d-lg-flex justify-content-end"><a class="hideLightBox "><img class="" src="./images/close.ico" alt=""></a></span>
+              <span class="d-none d-lg-flex justify-content-end"><a class="hideLightBox "><img class="" src="./images/icons/close.ico" alt=""></a></span>
               <span class="mt-3 col-12 col-lg-12"><h3 class="text-success">${title}</h3></span>
               <div class="col-12 mb-4 col-lg-12">
                 <span class="text-muted">${prices[0]}</span>
