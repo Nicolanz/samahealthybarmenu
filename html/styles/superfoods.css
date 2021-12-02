@@ -1,0 +1,20 @@
+
+
+.milk-container{
+    background-color: rgba(255, 254, 205, 0.397);
+}
+
+
+ /* MEDIA QUERIES */
+  
+  /* media quieries nav styles - 992px (break-point) */
+  @media only screen and (max-width: 992px){
+  }
+
+  /* media quieries nav styles - 992px (break-point) */
+  @media only screen and (max-width: 767px) {
+  }
+
+  /* media quieries nav styles - 576px (break-point) */
+  @media only screen and (max-width: 576px){
+  }

@@ -3,8 +3,8 @@
 
 /* header styles */
 
-header{
-    margin-top: 170px !important;
+article{
+    margin-top: 160px !important;
 }
 
 .lightbox{
@@ -37,8 +37,7 @@ header{
 }
 
 /* article styles */
-article .card .card-body .text-muted, 
-.text-muted{
+article .card .card-body .text-muted{
     text-decoration: line-through;
 }
 
@@ -49,6 +48,10 @@ article .card{
 
 /* media quieries header styles - 992px (break-point) */
 @media only screen and (max-width: 992px) {
+
+    article {
+        margin-top: 120px !important;
+    }
 }
 /* media quieries header styles - 768px (break-point) */
 @media only screen and (max-width: 767px) {

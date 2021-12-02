@@ -12,6 +12,7 @@
     --green-dark-color: #5FD39F;
     --main-font: futura-pt_normal;
     --light-font: futura-pt_light;
+    --font-size-small: 17px;
   }
   /* box-size rules */
   *, body{
@@ -25,18 +26,114 @@
     z-index: -2;
     background:transparent;
   }
-  /* Underlined menu tag */
+  /* main general styles */
+  .green{
+    color: var(--green-dark-color);
+  }
+  .piel{
+    color: #FF715B;
+  }
+  .morado{
+    color: #C04CFD;
+  }
+  .blue{
+    color: #3772FF;
+  }
+  .vermillon{
+    color: #CD4631;
+  }
+  .pink{
+    color: #D90368;
+  }
+  .menta{
+    color: #DDFFF7;
+  }
+  .orange{
+    color: #F95738;
+  }
+  .limon{
+    color: #FAF0CA;
+  }
+  .yellow{
+    color: #F1D302;
+  }
+  .green-yellow{
+    color: #B1CC74;
+  }
+  .agua-marina{
+    color: #60D394;
+  }
+  .blue-green{
+    color: #98B9AB;
+  }
+  .hean{
+    color: #5E2BFF;
+  }
+  .beauty{
+    color: #FC6DAB;
+  }
+  .green-dark{
+    color: #36453B;
+  }
+  .ebony{
+    color: #515751;
+  }
+  .cadet{
+    color: #596869;
+  }
+  .fire-opal{
+    color: #DE6449;
+  }
+  .club-colombia{
+    color: #941023;
+  }
+  .brown{
+    color: #4B2707;
+  }
+  .brown-sugar{
+    color: #BB7E5D;
+  }
+  .light-blue{
+    color: #32CBFF;
+  }
+  .light-purple{
+    color: #704C5E;
+  }
   .underline{
     border-bottom: 2px solid black;
     padding-bottom: 3px;
   }
-  
+  .font-menu{
+    font-size: 11px;
+  }
+  .button{
+    font-size: var(--font-nav-size);
+    color: rgb(110, 104, 104);
+    background-color: #ffe5d9;
+    padding: 10px 24px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+  }
+  .imgs{
+    width: 100%;
+    height: 300px;
+  }
+  .logos-nav a img{
+    width: 22px;
+    height: 22px;
+  }
+
+  .font-size-small{
+    font-size: var(--font-size-small);
+  }
+
   /* HEADER STYLES */
   
   /* nav styles */
   nav { 
-    background-color: #F4F6F5;
-    min-height: 100px;
+    background-color: #fff1e6;
+    min-height: 150px;
     z-index: 1;
     top: 0;
     transition: top 0.3s;
@@ -58,18 +155,9 @@
   nav .menu .menuContent a svg{
     color: var(--brown-color);
   }
-  .button{
-    font-size: var(--font-nav-size);
-    color: var(--white-color);
-    background-color: var(--green-dark-color);
-    padding: 10px 24px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-  }
   nav .menu .menuContent button{
-    background-color: var(--green-dark-color);
-    color: var(--white-color);
+    color: rgb(110, 104, 104);
+    background-color: #ffe5d9;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -81,21 +169,11 @@
   nav button:hover{
     opacity: 0.5;
   }
-  .logos-nav a img{
-    width: 22px;
-    height: 22px;
-  }
-  
-  /* header styles */
-  header{
-    margin-top: 120px;
-  }
 
   /* FOOTER STYLES */
-  
   footer{
+    background-color: #fff1e6;
     min-height: 200px;
-    background: #F4F6F5;
   }
   footer ul li a{
     color:var(--brown-color);
@@ -111,13 +189,26 @@
     font-size: 14px;
   }
   
-  
   /* MEDIA QUERIES */
   
   /* media quieries nav styles - 992px (break-point) */
   @media only screen and (max-width: 992px){
-
+    .font-menu{
+      font-size: 10px;
+    }
+    article{
+      background-color: #fcd5ce !important;
+      background-image: linear-gradient(#fcd5ce, #a7e8bd, #fcd2af, #cddafd, #f1ffc4) !important;
+    }
+    header{
+      background-color: #fcd5ce;
+    }
   }
+
+  /* media quieries nav styles - 992px (break-point) */
+  @media only screen and (max-width: 767px) {
+  }
+
   /* media quieries nav styles - 576px (break-point) */
   @media only screen and (max-width: 576px){
     nav{
@@ -182,7 +273,7 @@
     bottom: 0;
     position: fixed;
     left: 0;
-    background-color: rgba(255, 255, 255, 0.726);
+    background-color: rgba(255, 255, 255, 0.829);
     z-index:-1;
   }
   .menu label {
