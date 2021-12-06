@@ -45,6 +45,10 @@ article .card{
     background: transparent;
 }
 
+.toston-arepas{
+    background-color: rgba(208, 157, 228, 0.137);
+}
+
 
 /* media quieries header styles - 992px (break-point) */
 @media only screen and (max-width: 992px) {

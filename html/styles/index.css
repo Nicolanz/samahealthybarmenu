@@ -17,11 +17,12 @@ header{
 .alter_button{
     position: absolute;
     padding: 7px 20px 7px 20px;
-    background-color: rgba(216, 212, 212, 0.315);
+    background: rgba(216, 212, 212, 0.315);
     color: white;
-    border: 2px solid white;
+    border: 1px solid white;
     border-radius: 10%;
     transition: 0.1s all ease-in;
+    -webkit-appearance: none;
 }
 .alter_button:hover{
     background-color: rgba(216, 212, 212, 0.74);
@@ -34,7 +35,9 @@ header{
         width: 70%;
         height: 400px;
     }
-    
+    .article{
+        background-image: linear-gradient(#fcd5ce, #a7e8bd, #fcd2af, #cddafd, #fcd5ce, #f1ffc4, #f7d9c4) !important;
+    }
 }
 /* media quieries header styles - 768px (break-point) */
 @media only screen and (max-width: 767px) {
