@@ -117,6 +117,7 @@
       </div>
     </nav>
 
+    <!-- ARTICLE TAG -->
     <article class="col-12 d-flex flex-row flex-wrap justify-content-around p-3">
         <div class="col-12 col-sm-12 col-md-9 col-lg-5" >
             <img class="img-fluid rounded" src="./images/local/local8.jpg" alt="">
@@ -124,34 +125,35 @@
         <div class="col-12 col-sm-12 col-md-9 col-lg-5 d-flex flex-column flex-wrap " >
             <h1 class="text-center">Contactanos</h1>
             <p class="text-center">Llena el formulario y pronto estaremos en pronto te contactaremos</p>
-            <form>
+            <form method="POST" class="contact-form" id="form">
                 <div class="col-12 d-flex flex-row flex-wrap justify-content-center ustify-content-md-between" >
                     <div class="col-12 col-md-6 p-2">
-                        <label for="uniqueName" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="uniqueName" placeholder="Ingresa tu nombre">
+                        <label for="name" class="form-label">Nombre</label>
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Ingresa tu nombre">
                     </div>
                    
                     <div class="mb-3 col-12 col-md-6 p-2">
-                        <label for="uniquelastName" class="form-label">Apellido</label>
-                        <input type="text" class="form-control" id="uniquelastName" placeholder="Ingresa tu apellido">    
+                        <label for="lastName" class="form-label">Apellido</label>
+                        <input type="text" name="lastName" class="form-control" id="lastName" placeholder="Ingresa tu apellido">    
                     </div>
                 </div>
                 <div class="mb- p-2">
-                  <label for="exampleInputEmail1" class="form-label">Correo Electronico</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresa tu correo">
+                  <label for="mail" class="form-label">Correo Electronico</label>
+                  <input type="email" name="mail" class="form-control" id="mail" aria-describedby="emailHelp" placeholder="Ingresa tu correo">
                   <div id="emailHelp" class="form-text">Nunca compartiremos tu correo</div>
                 </div>
                 <div class="p-2">
                   <label for="comentario" class="form-label">Mensaje</label>
-                  <textarea class="form-control" id="comentario" name="text" >    
+                  <textarea class="form-control" id="comentario" name="comentario" >    
                   </textarea>
-                  <div  class="form-text">Cuentanos que opinas de Sama Healthy Bar</div>
+                  <div class="form-text">Cuentanos que opinas de Sama Healthy Bar</div>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
         </div>
     </article>
-     <!-- WHATSAPP BUTTON -->
+    
+    <!-- WHATSAPP BUTTON -->
     <a type="button" class="whatsapp" href="https://api.whatsapp.com/send?phone=+573173580918" target="_blank">
       <img src="./images/icons/whatsapp.png" alt="">
     </a>
@@ -166,5 +168,9 @@
       </ul>
       <span class="m-0 p-0 mt-4">SAMA</span>
     </footer>
+
+    <!-- CDN  to send emails -->
+    <script src="https://smtpjs.com/v3/smtp.js" ></script>
+    <script src="./scripts/mail.js" ></script>
   </body>
 </html>
