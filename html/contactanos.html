@@ -26,9 +26,11 @@
       <link rel="stylesheet" href="./styles/styles.css?v=1.1">
       <!-- ENTRADAS STYLES -->
       <link rel="stylesheet" href="./styles/items.css?v=1.1">
+      <!-- FOOTER ITEMS STYLES -->
+      <link rel="stylesheet" href="./styles/footer.css?v=1.1">
 
   </head>
-  <body>
+  <body class="d-flex flex-column justify-content-between">
     <!-- NAV TAG -->
     <nav class="d-flex flex-row justify-content-between justify-content-md-around align-items-center position-fixed col-12 shadow-sm" id="navbar">
 
@@ -119,37 +121,55 @@
 
     <!-- ARTICLE TAG -->
     <article class="col-12 d-flex flex-row flex-wrap justify-content-around p-3">
-        <div class="col-12 col-sm-12 col-md-9 col-lg-5" >
+        <div class="col-12 col-sm-12 col-md-9 col-lg-5 mt-4" >
             <img class="img-fluid rounded" src="./images/local/local8.jpg" alt="">
         </div>
-        <div class="col-12 col-sm-12 col-md-9 col-lg-5 d-flex flex-column flex-wrap " >
-            <h1 class="text-center">Contactanos</h1>
-            <p class="text-center">Llena el formulario y pronto estaremos en pronto te contactaremos</p>
-            <form method="POST" class="contact-form" id="form">
-                <div class="col-12 d-flex flex-row flex-wrap justify-content-center ustify-content-md-between" >
-                    <div class="col-12 col-md-6 p-2">
-                        <label for="name" class="form-label">Nombre</label>
-                        <input type="text" name="name" class="form-control" id="name" placeholder="Ingresa tu nombre">
+        <div class="message-div col-12 col-sm-12 col-md-9 col-lg-5 mb-4 mt-lg-4">
+            <div class="card my-5 my-lg-0">
+                <div class="card-header">
+                  Sama Healthy Bar
+                </div>
+                <div class="card-body">
+                  <h2 class="card-title pink title">Gracias</h2>
+                  <p class="card-text">Te contactaremos pronto!</p>
+                  <a href="./" class="btn btn-primary border my-2 mr-1">Volver al menu</a>
+                </div>
+              </div>
+        </div>
+        <div class="form-div col-12 col-sm-12 col-md-9 col-lg-5 mb-4 mt-lg-4">
+            <div class="d-flex flex-column flex-wrap formulario p-3 border rounded my-5 my-lg-0" >
+            <h1 class="text-center hean p-5 title">Contactanos</h1>
+                <p class="text-center text-secondary">Llena el formulario y pronto te contactaremos</p>
+                <form method="POST" class="contact-form" id="form">
+                    <div class="col-12 d-flex flex-row flex-wrap justify-content-center ustify-content-md-between" >
+                        <div class="col-12 col-md-6 p-2">
+                            <label for="name" class="form-label">Nombre</label>
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Ej: Andres">
+                        </div>
+                       
+                        <div class="mb-3 col-12 col-md-6 p-2">
+                            <label for="lastName" class="form-label">Apellido</label>
+                            <input type="text" name="lastName" class="form-control" id="lastName" placeholder="Ej: Gomez">    
+                        </div>
                     </div>
-                   
-                    <div class="mb-3 col-12 col-md-6 p-2">
-                        <label for="lastName" class="form-label">Apellido</label>
-                        <input type="text" name="lastName" class="form-control" id="lastName" placeholder="Ingresa tu apellido">    
+                    <div class=" p-2">
+                      <label for="mail" class="form-label">Correo Electronico</label>
+                      <input type="email" name="mail" class="form-control" id="mail" aria-describedby="emailHelp" placeholder="Ej: andres@hotmail.com">
+                      <div id="emailHelp" class="form-text">Nunca compartiremos tu correo</div>
                     </div>
-                </div>
-                <div class="mb- p-2">
-                  <label for="mail" class="form-label">Correo Electronico</label>
-                  <input type="email" name="mail" class="form-control" id="mail" aria-describedby="emailHelp" placeholder="Ingresa tu correo">
-                  <div id="emailHelp" class="form-text">Nunca compartiremos tu correo</div>
-                </div>
-                <div class="p-2">
-                  <label for="comentario" class="form-label">Mensaje</label>
-                  <textarea class="form-control" id="comentario" name="comentario" >    
-                  </textarea>
-                  <div class="form-text">Cuentanos que opinas de Sama Healthy Bar</div>
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
-            </form>
+                    <div class=" p-2">
+                        <label for="celular" class="form-label">Numero Celular</label>
+                        <input type="text" name="celular" class="form-control" id="celular" placeholder="Ej: 3103045527">
+                        <div class="form-text">Nunca compartiremos tu numero de celular</div>
+                      </div>
+                    <div class="p-2">
+                      <label for="comentario">Mensaje</label>
+                      <textarea class="form-control" id="comentario" name="comentario" rows="3" ></textarea>
+                      <div class="form-text">Cuentanos que opinas de Sama Healthy Bar</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary border ml-1 my-3">Enviar</button>
+                </form>
+            </div>
         </div>
     </article>
     
@@ -161,7 +181,7 @@
     <!-- FOOTER TAG -->
     <footer class="col-12 d-flex flex-column flex-wrap align-items-center justify-content-center ">
       <ul class="m-0 p-0 list-unstyled d-flex flex-row col-9 col-md-7 justify-content-center flex-wrap">
-        <li class="p-2"><a href="./">MENU</a></li>
+        <li class="p-2"><a href="./">MENÚ</a></li>
         <li class="p-2"><a href="./local.html">LOCAL</a></li>
         <li class="p-2"><a href="./nosotros.html">NOSOTROS</a></li>
         <li class="p-2"><a href="./contactanos.html">CONTACTANOS</a></li>        

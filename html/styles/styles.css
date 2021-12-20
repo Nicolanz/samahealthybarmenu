@@ -1,6 +1,21 @@
 
 /* general-styles - File to define the global styles */
 
+@font-face {
+  font-family: 'title';
+  src: url('../fonts/Little\ Comet\ Bubling\ Demo\ Version.otf');
+}
+
+@font-face {
+  font-family: 'secondary-title';
+  src: url('../fonts/AccidentalPresidency.ttf');
+}
+
+@font-face {
+  font-family: 'text';
+  src: url('../fonts/Acumin-RPro.otf');
+}
+
   
   /* Definition of global css variables */
   :root{
@@ -19,6 +34,7 @@
     border: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: text;
   }
   
   /* body tag styles */
@@ -27,6 +43,8 @@
     background:transparent;
   }
   /* main general styles */
+
+  /* colors */
   .green{
     color: var(--green-dark-color);
   }
@@ -99,16 +117,54 @@
   .light-purple{
     color: #704C5E;
   }
+  .items-color{
+    color: #545454;
+  }
   .grey{
     color: grey !important;
+  }
+  .titles-color{
+    color: #305252;
+  }
+  .cafe1{
+    color: #b7b7a4;
+  }
+  .cafe2{
+    color: #a5a58d;
+  }
+  .cafe3{
+    color: #6b705c;
+  }
+  .cafe4{
+    color: #9c6644;
+  }
+  .cafe5{
+    color: #7f5539;
+  }
+  .cafe6{
+    color: #b08968;
+  }
+  .cafe7{
+    color: #ede0d4;
   }
   .transparent{
     background: #ffffff8f;
   }
-  .underline{
-    border-bottom: 2px solid black;
-    padding-bottom: 3px;
+
+  /* fonts */
+  .title{
+    font-family: title;
   }
+  .secondary-title{
+    font-family: secondary-title;
+  }
+  .text{
+    font-family: text;
+  }
+  .justify-text{
+    text-align: justify;
+  }
+
   .font-menu{
     font-size: 11px;
   }

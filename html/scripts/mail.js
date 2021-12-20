@@ -2,6 +2,7 @@
 
 const $form = document.querySelector('#form');
 $form.addEventListener('submit', handleSumbit);
+$( ".message-div" ).hide();
 
 function handleSumbit(e) {
     e.preventDefault();
@@ -11,13 +12,20 @@ function handleSumbit(e) {
     let lastName = form.get('lastName');
     let mail = form.get('mail');
     let comentario = form.get('comentario');
+    let celular = form.get("celular");
+    console.log(celular);
 
     $form.reset();
-    sendEmail(name, lastName, mail, comentario);
+    sendEmail(name, lastName, mail, comentario, celular);
 
 }
 
-function sendEmail(name, lastName, mail, comentario) {
+function submitEmail(){
+    $( " .form-div " ).hide();
+    $( " .message-div " ).show();
+}
+
+function sendEmail(name, lastName, mail, comentario, celular) {
     Email.send({
         Host : "smtp.gmail.com",
         Username : "zarateguarinnicolasandres@gmail.com",
@@ -28,19 +36,23 @@ function sendEmail(name, lastName, mail, comentario) {
         Body : `Nombre: ${name} <br />
                 Apellido: ${lastName} <br />
                 Correo: ${mail} <br />
+                Celular: ${celular} <br />
                 Mensaje: ${comentario} <br />
                 `
-    }).then((comentario) => console.log(comentario) )
+    }).then((comentario) => {
+        console.log(comentario);
+        submitEmail();
+    } )
 
-    Email.send({
-        Host : "smtp.gmail.com",
-        Username : "zarateguarinnicolasandres@gmail.com",
-        Password : "cfvoldjobsqgkrpb",
-        To : `${mail}`,
-        From : "zarateguarinnicolasandres@gmail.com",
-        Subject : `Gracias por contactarte con Sama Healthy Bar`,
-        Body : `<h1>Sama Healthy Bar</h1> <br />
-                Esperamos que the haya gustado nuestra comida
-                `
-    }).then((comentario) => console.log(comentario) )
+    // Email.send({
+    //     Host : "smtp.gmail.com",
+    //     Username : "zarateguarinnicolasandres@gmail.com",
+    //     Password : "cfvoldjobsqgkrpb",
+    //     To : `${mail}`,
+    //     From : "zarateguarinnicolasandres@gmail.com",
+    //     Subject : `Gracias por contactarte con Sama Healthy Bar`,
+    //     Body : `<h1>Sama Healthy Bar</h1> <br />
+    //             Esperamos que the haya gustado nuestra comida
+    //             `
+    // }).then((comentario) => submitEmail() )
 }

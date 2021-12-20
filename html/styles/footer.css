@@ -1,0 +1,30 @@
+
+html {
+    height: -webkit-fill-available; /* We have to fix html height */
+}
+
+body {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+}
+
+.formulario, .card {
+    background: rgba(238, 236, 236, 0.541) !important;
+}
+.btn-primary{
+    background-color: #5E2BFF !important;
+}
+
+
+.nosotros{
+    background-color: rgba(238, 236, 236, 0.541) !important;
+}
+.card-1{
+    background-color: rgba(255, 255, 255, 0.658) !important;
+}
+.card-2 p{
+    background-color: #d1f5be93;
+}
+.card-3 p{
+    background-color: #cefdff98;
+}
